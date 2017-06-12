@@ -1,6 +1,8 @@
 window.onload = init;
 //var socket = new WebSocket("localhost:8080/WebsocketHome/actions");
-var socket = new WebSocket("ws://localhost:8080/WebSocket/actions");
+var socket = new WebSocket("http://myservice01-myservice1.7e14.starter-us-west-2.openshiftapps.com/WebSocket/actions");
+//var socket = new WebSocket("ws://localhost:8080/WebSocket/actions");
+
 socket.onmessage = onMessage;
 
 function onMessage(event) {
